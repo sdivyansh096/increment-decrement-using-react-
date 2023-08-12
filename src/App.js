@@ -13,20 +13,20 @@ const [count,setCount]=useState(0);
     setCount(0);
   }
   return (
-  <div>
-    <div>Increment && Decrement</div>
-    <div>
-    <button onClick={decrement}>
+  <div className="container">
+    <div className="header">Increment && Decrement</div>
+    <div className="counter-container">
+    <button className="button" onClick={decrement}>
       -
     </button>
-    <div> 
+    <div className="counter"> 
      {count}
     </div>
-    <button onClick={increment}>
+    <button className="button" onClick={increment}>
       +
       </button>
     </div>
-    <button onClick={reset}>
+    <button className="button" onClick={reset}>
       Reset
       </button>
   </div>
